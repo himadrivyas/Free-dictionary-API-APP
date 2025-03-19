@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #ae9cff;
+}
+
+.container{
+    background-color: antiquewhite;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top:50%;
+    padding:2rem 3rem;
+    width:90vmin;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px rgba(38,33,61,0.5);
+}
+
+.search-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    padding: 10px;
+    width:75%;
+    border-bottom: 3px solid #ae9cff;
+    font-size:1.15rem
+}
+
+.search-box button{
+    width: 20%;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    border:none;
+    background-color: #ae9cff;
+    outline:none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.result{
+    margin: 2em 0;
+    position: relative;
+}
+
+.result .word{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.result .word h5{
+    color: #86809c;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.result .word button{
+    background-color: transparent;
+    color: #ae9cff;
+    border:none;
+    outline: none;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+.result .word button:disabled{
+    color: grey;
+}
+
+.title{
+    color:#473737;
+    font-size:1.15rem;
+    font-weight:500;
+    margin:15px 0;
+}
+
+.details{
+    position: relative;
+    margin:1em 0;
+}
+
+.details .word-meaning{
+    color: #575a7b;
+}
+
+.details .word-example{
+    color: #575a7b;
+    font-style: italic;
+    font-weight: 300;
+    margin:1rem 0;
+    padding-left:15px;
+    border-left: 5px solid #ae9cff;
+}
+
+.details .synonym{
+    font-weight: 500;
+    color: #ae9cff;
+    margin-bottom: 10px;
+    font-size: 1.10rem;
+}
+
+
+.details .antonym{
+    font-weight: 500;
+    font-size: 1.10rem;
+    color: #575a7b;
+    margin-bottom:10px;
+}
